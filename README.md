@@ -171,3 +171,6 @@ stdio, читает и пишет только файлы в каталоге б
 `claude mcp add drafta -- /путь/к/drafta-mcp --library <путь к библиотеке>`.
 Флаг `--read-only` оставляет только инструменты чтения. Это независимый снимок
 сервера, а не бинарник, который поставляется внутри Drafta.app.
+
+---
+[![M8ven Score](https://m8ven.ai/badge/mcp/rpegorov-drafta-mcp-15suiv)](https://m8ven.ai/mcp/rpegorov-drafta-mcp-15suiv)
