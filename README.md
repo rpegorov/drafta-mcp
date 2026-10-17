@@ -72,6 +72,22 @@ claude mcp add drafta -- /usr/local/bin/drafta-mcp --library "~/Library/Applicat
 
 Add `--read-only` at the end to give the assistant read access only.
 
+### Claude Code plugin
+
+This repository is also a Claude Code plugin marketplace. The plugin starts the
+`drafta-mcp` helper that ships inside Drafta.app, so it requires Drafta.app in
+`/Applications`.
+
+```
+/plugin marketplace add rpegorov/drafta-mcp
+/plugin install drafta@drafta
+```
+
+The plugin runs the server with its defaults (the app's library, read and write).
+For read-only access, or for Drafta.app in `~/Applications`, register the helper
+yourself with `claude mcp add` and pass `--read-only` or the full path; see
+[plugins/drafta/README.md](plugins/drafta/README.md).
+
 ### Zed
 
 In `settings.json`:

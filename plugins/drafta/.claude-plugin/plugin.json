@@ -1,0 +1,15 @@
+{
+  "name": "drafta",
+  "displayName": "Drafta",
+  "version": "1.0.0",
+  "description": "Lets Claude search, read and write notes in your local Drafta library over a local stdio MCP server.",
+  "author": {
+    "name": "Rostislav Egorov",
+    "url": "https://github.com/rpegorov"
+  },
+  "homepage": "https://github.com/rpegorov/drafta-mcp",
+  "repository": "https://github.com/rpegorov/drafta-mcp",
+  "license": "Apache-2.0",
+  "keywords": ["drafta", "notes", "markdown", "mcp", "knowledge-base", "macos"],
+  "icon": "./.claude-plugin/icon.png"
+}

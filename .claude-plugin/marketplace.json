@@ -1,0 +1,14 @@
+{
+  "name": "drafta",
+  "description": "Claude Code plugins for the Drafta notes app.",
+  "owner": {
+    "name": "Rostislav Egorov"
+  },
+  "plugins": [
+    {
+      "name": "drafta",
+      "source": "./plugins/drafta",
+      "description": "Search, read and write notes in your local Drafta library over a local stdio MCP server."
+    }
+  ]
+}
