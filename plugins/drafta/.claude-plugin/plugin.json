@@ -10,6 +10,14 @@
   "homepage": "https://github.com/rpegorov/drafta-mcp",
   "repository": "https://github.com/rpegorov/drafta-mcp",
   "license": "Apache-2.0",
-  "keywords": ["drafta", "notes", "markdown", "mcp", "knowledge-base", "macos"],
+  "privacyPolicyUrl": "https://github.com/rpegorov/drafta-mcp#privacy",
+  "keywords": [
+    "drafta",
+    "notes",
+    "markdown",
+    "mcp",
+    "knowledge-base",
+    "macos"
+  ],
   "icon": "./.claude-plugin/icon.png"
 }
