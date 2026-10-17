@@ -1,0 +1,10 @@
+# Drafta notes over the drafta-mcp helper that ships inside Drafta.app.
+# Remove any hand-added Drafta MCP row: two servers named "drafta" collide.
+- insert:
+    - id: dsh-drafta-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: drafta
+        transport: stdio
+        command: /Applications/Drafta.app/Contents/Helpers/drafta-mcp
+        failOnStartupError: false

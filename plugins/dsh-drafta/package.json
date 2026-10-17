@@ -1,0 +1,30 @@
+{
+  "name": "dsh-drafta",
+  "version": "1.0.0",
+  "description": "Drafta notes for DeepSeek Harness: search, read and write your local Drafta library over MCP.",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpegorov/drafta-mcp.git",
+    "directory": "plugins/dsh-drafta"
+  },
+  "homepage": "https://github.com/rpegorov/drafta-mcp",
+  "author": {
+    "name": "Rostislav Egorov",
+    "url": "https://github.com/rpegorov"
+  },
+  "keywords": ["dsh-plugin", "deepseek-harness", "mcp", "drafta", "notes"],
+  "exports": {
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
