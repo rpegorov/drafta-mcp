@@ -1,0 +1,23 @@
+{
+  "name": "drafta",
+  "version": "1.0.0",
+  "description": "Lets Codex search, read and write notes in your local Drafta library over a local stdio MCP server.",
+  "author": {
+    "name": "Rostislav Egorov",
+    "url": "https://github.com/rpegorov"
+  },
+  "homepage": "https://github.com/rpegorov/drafta-mcp",
+  "repository": "https://github.com/rpegorov/drafta-mcp",
+  "license": "Apache-2.0",
+  "keywords": ["drafta", "notes", "markdown", "mcp", "knowledge-base", "macos"],
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Drafta",
+    "shortDescription": "Search and write notes in your local Drafta library",
+    "longDescription": "Connects Codex to the Drafta notes app through the drafta-mcp helper that ships inside Drafta.app. Codex can search and read notes, and create, append to, tag and file them. The server talks over stdio, touches only your local library files and makes no network requests. Requires Drafta.app in /Applications.",
+    "developerName": "Rostislav Egorov",
+    "category": "Productivity",
+    "privacyPolicyURL": "https://github.com/rpegorov/drafta-mcp#privacy",
+    "websiteURL": "https://github.com/rpegorov/drafta-mcp"
+  }
+}

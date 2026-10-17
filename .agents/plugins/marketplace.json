@@ -1,0 +1,20 @@
+{
+  "name": "drafta",
+  "interface": {
+    "displayName": "Drafta"
+  },
+  "plugins": [
+    {
+      "name": "drafta",
+      "source": {
+        "source": "local",
+        "path": "./plugins/drafta-codex"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
