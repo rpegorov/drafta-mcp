@@ -88,6 +88,31 @@ For read-only access, or for Drafta.app in `~/Applications`, register the helper
 yourself with `claude mcp add` and pass `--read-only` or the full path; see
 [plugins/drafta/README.md](plugins/drafta/README.md).
 
+### Codex
+
+```
+codex plugin marketplace add rpegorov/drafta-mcp
+codex plugin add drafta@drafta
+```
+
+The plugin starts the helper inside Drafta.app, so it needs Drafta.app in `/Applications`.
+
+### DeepSeek Harness (DSH)
+
+`plugins/dsh-drafta` adds a `@deepseek-ai/dsh-mcp-client` row (`dsh-drafta-mcp`) for the
+Drafta helper. Add the package to your profile's `package.json` the same way as any
+local plugin, with a `link:` dependency, and list it under `dsh.profile.bundles`:
+
+```json
+{
+  "dependencies": { "dsh-drafta": "link:/path/to/drafta-mcp/plugins/dsh-drafta" },
+  "dsh": { "profile": { "bundles": ["dsh-drafta"] } }
+}
+```
+
+If you already added Drafta to DSH by hand, remove one of the two: both register a
+server named `drafta`.
+
 ### Zed
 
 In `settings.json`:
