@@ -88,6 +88,13 @@ For read-only access, or for Drafta.app in `~/Applications`, register the helper
 yourself with `claude mcp add` and pass `--read-only` or the full path; see
 [plugins/drafta/README.md](plugins/drafta/README.md).
 
+### Claude Desktop (MCPB)
+
+Download `drafta-mcp.mcpb` from the [Releases](https://github.com/rpegorov/drafta-mcp/releases)
+page and double-click it. The bundle contains no binary: it starts the `drafta-mcp`
+helper that ships inside Drafta.app, so it requires Drafta.app in `/Applications`.
+Build it from source with `scripts/build-mcpb.sh`.
+
 ### Codex
 
 ```

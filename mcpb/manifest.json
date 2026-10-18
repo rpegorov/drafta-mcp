@@ -1,0 +1,98 @@
+{
+  "manifest_version": "0.3",
+  "name": "drafta-mcp",
+  "display_name": "Drafta",
+  "version": "1.0.0",
+  "description": "Search, read and write notes in your local Drafta library over a local stdio MCP server.",
+  "long_description": "Open-source MCP server for the Drafta notes app. Search and read notes, and create, append to, tag and file them. Talks over stdio, touches only files in the local library and makes no network requests. This bundle contains no server binary: it starts the helper that ships inside Drafta.app, so it requires the Drafta app installed in /Applications.",
+  "author": {
+    "name": "Rostislav Egorov",
+    "url": "https://github.com/rpegorov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rpegorov/drafta-mcp.git"
+  },
+  "homepage": "https://github.com/rpegorov/drafta-mcp",
+  "support": "https://github.com/rpegorov/drafta-mcp/issues",
+  "icon": "icon.png",
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/server/index.js"
+      ]
+    }
+  },
+  "tools": [
+    {
+      "name": "search_notes",
+      "description": "Search the user's Drafta notes. Combine free text with filters: this is how you find \"open bugs\" or \"everything tagged #idea\"."
+    },
+    {
+      "name": "read_note",
+      "description": "Read one note in full, by id or by exact title."
+    },
+    {
+      "name": "list_notebooks",
+      "description": "List the notebooks, with their hierarchy. Notebooks are how notes are filed."
+    },
+    {
+      "name": "list_tags",
+      "description": "List every tag in use across the library."
+    },
+    {
+      "name": "formatting_guide",
+      "description": "The Markdown Drafta understands: callouts, mermaid diagrams, task lists, tags, wiki links between notes, maths, and how title, notebook and status work. Read this before writing a note, or it will com"
+    },
+    {
+      "name": "create_note",
+      "description": "Create a note. Without a notebook it goes to the Inbox. Use formatting_guide for what the body can contain."
+    },
+    {
+      "name": "append_to_note",
+      "description": "Append to the end of a note, keeping the previous text as a revision. The usual way to add a finding to an existing note."
+    },
+    {
+      "name": "update_note",
+      "description": "Replace a note's entire body. The previous text is kept as a revision."
+    },
+    {
+      "name": "set_note_status",
+      "description": "Set a note's status — how a bug is marked fixed or an idea dropped. The status is a field the app filters on; do not write \"DONE\" into the text instead."
+    },
+    {
+      "name": "tag_note",
+      "description": "Add tags to a note. Tags already present are ignored, including ones written in the body text."
+    },
+    {
+      "name": "create_notebook",
+      "description": "Create a notebook, or return the existing one with that name. Use it to file notes by area — Bugs, Ideas, and so on."
+    },
+    {
+      "name": "trash_note",
+      "description": "Move a note to the trash. The file is kept, as it is in the app."
+    }
+  ],
+  "tools_generated": false,
+  "keywords": [
+    "drafta",
+    "notes",
+    "markdown",
+    "knowledge-base"
+  ],
+  "license": "Apache-2.0",
+  "privacy_policies": [
+    "https://github.com/rpegorov/drafta-mcp#privacy"
+  ],
+  "compatibility": {
+    "platforms": [
+      "darwin"
+    ],
+    "runtimes": {
+      "node": ">=18.0.0"
+    }
+  }
+}
